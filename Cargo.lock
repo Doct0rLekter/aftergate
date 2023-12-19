@@ -87,6 +87,20 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f26201604c87b1e01bd3d98f8d5d9a8fcbb815e8cedb41ffccbeb4bf593a35fe"
 
 [[package]]
+name = "aftergate"
+version = "0.1.0"
+dependencies = [
+ "bevy",
+ "bevy_asset_loader",
+ "bevy_kira_audio",
+ "embed-resource",
+ "image",
+ "rand",
+ "webbrowser",
+ "winit",
+]
+
+[[package]]
 name = "ahash"
 version = "0.8.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -579,20 +593,6 @@ checksum = "5328a3715e933ebbff07d0e99528dc423c4f7a53590ed1ac19a120348b028990"
 dependencies = [
  "bevy_macro_utils",
  "encase_derive_impl",
-]
-
-[[package]]
-name = "bevy_game"
-version = "0.1.0"
-dependencies = [
- "bevy",
- "bevy_asset_loader",
- "bevy_kira_audio",
- "embed-resource",
- "image",
- "rand",
- "webbrowser",
- "winit",
 ]
 
 [[package]]
@@ -2395,8 +2395,8 @@ dependencies = [
 name = "mobile"
 version = "0.1.0"
 dependencies = [
+ "aftergate",
  "bevy",
- "bevy_game",
  "cpal",
 ]
 
